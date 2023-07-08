@@ -9,8 +9,8 @@ import SwiftUI
 
 public struct WelcomeSheetView: View {
     var pages: [WelcomeSheetPage]
-    var layoutDirection: LayoutDirection?
     var onDismiss: () -> Void
+    var layoutDirection: LayoutDirection?
     
     public var body: some View {
         NavigationView {
