@@ -20,7 +20,7 @@ public struct WelcomeSheetView: View {
                     .navigationBarHidden(true)
             }
         }
-        .environment(\.layoutDirection, layoutDirection)
+        .environment(\.layoutDirection, layoutDirection ?? .leftToRight)
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }
