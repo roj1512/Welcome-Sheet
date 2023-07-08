@@ -9,6 +9,7 @@ import SwiftUI
 
 public struct WelcomeSheetView: View {
     var pages: [WelcomeSheetPage]
+    var layoutDirection: LayoutDirection?
     var onDismiss: () -> Void
     
     public var body: some View {
@@ -19,6 +20,7 @@ public struct WelcomeSheetView: View {
                     .navigationBarHidden(true)
             }
         }
+        .environment(\.layoutDirection, layoutDirection)
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }
